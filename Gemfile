@@ -54,4 +54,7 @@ end
 # devise for authentication.
 gem 'devise'
 
+gem 'ember-rails'
+gem 'ember-source', '1.9.0.alpha'
+
 ruby "2.1.2"
