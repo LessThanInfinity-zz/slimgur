@@ -57,4 +57,6 @@ gem 'devise'
 gem 'ember-rails'
 gem 'ember-source', '1.9.0.alpha'
 
+gem 'hirb'
+
 ruby "2.1.2"
