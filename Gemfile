@@ -54,9 +54,14 @@ end
 # devise for authentication.
 gem 'devise'
 
+# Ember
 gem 'ember-rails'
 gem 'ember-source', '1.9.0.alpha'
 
+# Pretty printing in console
 gem 'hirb'
+
+# Acts as tree for comments
+gem 'acts_as_tree'
 
 ruby "2.1.2"

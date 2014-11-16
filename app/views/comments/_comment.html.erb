@@ -1,0 +1,4 @@
+<div id="comment_<%= comment.id %>">
+  <%= comment.body %> => <%= comment.children.length %> replies
+  <%= render :partial => 'comments/comment', :collection => comment.children %>
+</div>

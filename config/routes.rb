@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :comments
+
   get 'static/index'
 
   resources :posts
