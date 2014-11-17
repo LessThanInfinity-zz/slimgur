@@ -64,4 +64,7 @@ gem 'hirb'
 # Acts as tree for comments
 gem 'acts_as_tree'
 
+# File upload
+gem 'paperclip'
+
 ruby "2.1.2"
