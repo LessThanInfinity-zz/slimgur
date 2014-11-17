@@ -19,8 +19,9 @@
 //= require ember-data
 //= require_self
 //= require ./slimgur
+//= require bootstrap
 
 // for more details see: http://emberjs.com/guides/application/
-Slimgur = Ember.Application.create();
+Slimgur = Ember.Application.create({rootElement: '#ember-app'});
 
 //= require_tree .

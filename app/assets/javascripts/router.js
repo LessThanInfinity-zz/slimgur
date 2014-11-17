@@ -2,5 +2,7 @@
 
 Slimgur.Router.map(function() {
   // this.resource('posts');
-  // location: 'auto'
+  location: 'auto',
+  rootURL: '/'
+
 });

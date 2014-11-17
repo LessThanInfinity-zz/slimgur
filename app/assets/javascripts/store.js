@@ -1,3 +1,7 @@
+// DS.RESTAdapter.reopen({
+//   namespace: 'api/v1'
+// })
+
 Slimgur.Store = DS.Store.extend({
 
 });
