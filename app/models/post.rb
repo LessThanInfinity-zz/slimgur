@@ -4,6 +4,9 @@ class Post < ActiveRecord::Base
 	has_many :taggings
 	has_many :tags, through: :taggings
 
+	has_many :favorite_posts
+	has_many :favorited_by, through:  :favorite_posts, source: :user
+
 	belongs_to :user
 
 	def tag_list
