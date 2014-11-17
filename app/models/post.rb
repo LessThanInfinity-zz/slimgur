@@ -1,7 +1,9 @@
 class Post < ActiveRecord::Base
 
 	has_attached_file :image
-	validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
+	# validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png, image/gif"]
+	validates_attachment_content_type :image, :content_type =>
+	/\Aimage\/(jpg|jpeg|pjpeg|png|x-png|gif)\z/
 
 	has_many :comments
 	has_many :taggings
