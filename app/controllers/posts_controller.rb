@@ -1,11 +1,17 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
-  respond_to :html
+  respond_to :html, :json
+  # respond_to :json
 
   def index
     @posts = Post.all
-    respond_with(@posts)
+    puts "in PostsController index. "
+    puts @posts
+    respond_with(@posts) do |format|
+      format.html
+      format.json {render json: @posts}
+    end
   end
 
   def show
