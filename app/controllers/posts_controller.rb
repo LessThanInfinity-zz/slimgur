@@ -13,8 +13,13 @@ class PostsController < ApplicationController
   end
 
   def new
+   if current_user
     @post = Post.new
     respond_with(@post)
+   else
+     redirect_to new_user_session_path, notice: 'You are not logged in.'
+   end
+
   end
 
   def edit
@@ -22,6 +27,9 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user_id = current_user.id
+
+
     @post.save
     respond_with(@post)
   end
@@ -42,6 +50,7 @@ class PostsController < ApplicationController
     end
 
     def post_params
-      params[:post]
+      # params[:post]
+      params.require(:post).permit(:title, :description, :tag_list)
     end
 end

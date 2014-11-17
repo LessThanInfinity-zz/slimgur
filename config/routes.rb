@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   get 'static/index'
 
-  resources :posts
+  resources :posts do 
+    resources :comments
+  end
+  
   root to: 'static#index'
 
   devise_for :users
