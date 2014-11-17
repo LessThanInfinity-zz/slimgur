@@ -7,6 +7,12 @@ class Post < ActiveRecord::Base
 	has_many :favorite_posts
 	has_many :favorited_by, through:  :favorite_posts, source: :user
 
+	has_many :likes
+	has_many :upvotes, through:  :likes, source: :user
+
+	has_many :dislikes
+	has_many :downvotes, through:  :likes, source: :user
+
 	belongs_to :user
 
 	def tag_list
