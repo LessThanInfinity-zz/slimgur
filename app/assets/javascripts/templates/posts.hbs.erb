@@ -1,0 +1,12 @@
+<article id="posts">
+	<h1>Posts</h1>
+
+		<ul>
+			{{#each post in model}}
+				<li>{{post.title}}</li>
+
+			{{/each}}
+		</ul>
+</article>
+
+{{outlet}}

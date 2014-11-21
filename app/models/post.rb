@@ -32,5 +32,10 @@ class Post < ActiveRecord::Base
 	  self.tags = new_or_found_tags
 	end
 
+	def uploaded_by
+		puts "USRS"
+		puts self.user.email
+		self.user.username
+	end
 	
 end

@@ -2,7 +2,7 @@
 //   namespace: 'api/v1'
 // })
 
-Slimgur.Store = DS.Store.extend({
+Slimgur.ApplicationStore = DS.Store.extend({
 
 });
 
