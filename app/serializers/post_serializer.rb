@@ -16,9 +16,8 @@ class PostSerializer < ActiveModel::Serializer
   						:tag_list, 
   						:uploaded_by,
   						:num_upvotes,
-  						:num_downvotes
-
-
+  						:num_downvotes,
+  						:is_favorite
   # has_one :user
   # belongs_to :user
   has_many :comments#, embed :ids, include: true

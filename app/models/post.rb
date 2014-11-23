@@ -47,5 +47,9 @@ class Post < ActiveRecord::Base
 	def num_downvotes
 		self.dislikes.count
 	end
-	
+
+	def is_favorite
+		# Placeholder. Need to put in real check
+		true
+	end
 end
