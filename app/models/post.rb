@@ -33,8 +33,8 @@ class Post < ActiveRecord::Base
 	end
 
 	def uploaded_by
-		puts "USRS"
-		puts self.user.email
+		# puts "USRS"
+		# puts self.user.email
 		self.user.username
 	end
 	

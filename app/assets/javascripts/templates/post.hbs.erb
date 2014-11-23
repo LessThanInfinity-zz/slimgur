@@ -1,11 +1,14 @@
-<h1> IS POST </h1>
-
 <h2>{{title}}</h2>
 <p>by {{uploadedBy}}</p>
 
 <p>{{description}}</p>
-<p>{{user}}</p>
-<p>{{tagList}}</p>
+<p>Tags: {{tagList}}</p>
 <p></p>
+<h4> comments: </h4>
+<ul> 
+	{{#each comment in comments}}
+		<li>{{comment.body}}</li>
+{{/each}}</ul>
+
 
 {{!-- <p> <%= @current_user %></p> --}}

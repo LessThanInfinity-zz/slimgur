@@ -187,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   acts_as_tree
   better_errors
   binding_of_caller

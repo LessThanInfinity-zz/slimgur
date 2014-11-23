@@ -24,4 +24,5 @@
 // for more details see: http://emberjs.com/guides/application/
 Slimgur = Ember.Application.create({rootElement: '#ember-app'});
 
+Slimgur.ApplicationSerializer = DS.ActiveModelSerializer.extend({});
 //= require_tree .

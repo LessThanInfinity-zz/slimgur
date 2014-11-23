@@ -67,4 +67,6 @@ gem 'acts_as_tree'
 # File upload
 gem 'paperclip'
 
+gem 'active_model_serializers'
+
 ruby "2.1.2"
