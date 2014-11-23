@@ -14,7 +14,10 @@ class PostSerializer < ActiveModel::Serializer
   						:image_updated_at, 
   						:image_url, 
   						:tag_list, 
-  						:uploaded_by
+  						:uploaded_by,
+  						:num_upvotes,
+  						:num_downvotes
+
 
   # has_one :user
   # belongs_to :user

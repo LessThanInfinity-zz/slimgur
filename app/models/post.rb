@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
 
 	has_attached_file :image
-	
+
 	validates_attachment_content_type :image, :content_type =>
 	/\Aimage\/(jpg|jpeg|pjpeg|png|x-png|gif)\z/
 
@@ -33,13 +33,19 @@ class Post < ActiveRecord::Base
 	end
 
 	def uploaded_by
-		# puts "USRS"
-		# puts self.user.email
 		self.user.username
 	end
 
 	def image_url
 		self.image.url
+	end
+
+	def num_upvotes
+		self.upvotes.count
+	end
+
+	def num_downvotes
+		self.dislikes.count
 	end
 	
 end
