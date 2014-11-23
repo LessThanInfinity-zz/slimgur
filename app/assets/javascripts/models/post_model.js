@@ -8,6 +8,7 @@ Slimgur.Post = DS.Model.extend({
 	imageContentType: DS.attr('string'),
 	imageFileSize: DS.attr('number'),
 	imageUpdatedAt: DS.attr('date'),
+	imageURL: DS.attr('string'),
 
 	createdAt: DS.attr('date'),
 	updatedAt: DS.attr('date'),

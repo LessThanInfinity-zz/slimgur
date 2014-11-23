@@ -10,5 +10,7 @@ Slimgur.Comment = DS.Model.extend({
 
 	commentedBy: DS.attr('string'),
 
-	post: DS.belongsTo('post', {async: true})
+	post: DS.belongsTo('post', {async: true}),
+	// parent: DS.belongsTo('comment', {async: true}),
+	// children: DS.hasMany('comment', {async: true})
 });

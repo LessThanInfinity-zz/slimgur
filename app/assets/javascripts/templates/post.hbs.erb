@@ -1,5 +1,6 @@
 <h2>{{title}}</h2>
 <p>by {{uploadedBy}}</p>
+<p><img {{bind-attr src='imageURL'}}></img>
 
 <p>{{description}}</p>
 <p>Tags: {{tagList}}</p>
@@ -8,6 +9,12 @@
 <ul> 
 	{{#each comment in comments}}
 		<li>{{comment.body}}</li>
+		<ul>
+			{{#each child in comment.children}}
+			<li>Child: {{child.body}}</li>
+			{{/each}}
+		</ul>
+		{{!-- <li>{{comment.children}}</li> --}}
 {{/each}}</ul>
 
 

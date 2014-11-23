@@ -5,7 +5,6 @@ class Comment < ActiveRecord::Base
 	belongs_to :post
 	belongs_to :user
 
-
 	def commented_by
 		self.user.username
 	end
