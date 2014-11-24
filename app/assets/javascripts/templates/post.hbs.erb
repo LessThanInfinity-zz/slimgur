@@ -1,17 +1,27 @@
-<h2>{{title}}</h2>
-<p>by {{uploadedBy}}</p>
+<div class="container">
+	<h2>{{title}}</h2>
+	<p>by {{uploadedBy}}</p>
+</div>
 
-{{#if imageURL}}
-	<p><img {{bind-attr src='imageURL'}}></img>
-{{else}}
-	<h2> LOADING </h2>
-{{/if}}
+<div class="container image-div">
+	{{#if imageURL}}
+		<p><img {{bind-attr src='imageURL'}}></img>
+	{{else}}
+		<h2> LOADING </h2>
+	{{/if}}
+</div>
 
-<p>{{description}}</p>
-<p>Tags: {{tagList}}</p>
-<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
-<p> Favorited: {{isFavorite}}
-<p></p>
+<div class="container">
+	<p>{{description}}</p>
+</div>
+
+<div class="container">
+	<p>Tags: {{tagList}}</p>
+	<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
+	<p> Favorited: {{isFavorite}}
+	<p></p>
+</div>
+
 <h4> comments: </h4>
 <ul> 
 	{{#each comment in comments}}

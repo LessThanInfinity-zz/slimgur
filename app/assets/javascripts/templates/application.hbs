@@ -53,17 +53,19 @@
 </nav>
 	{{!-- This portion will appear on every page as the header. Add nav bar and such here. --}}
 	<article>
-		<div class="logo">
+{{!-- 		<div class="logo">
 			<h1>
 				<a href="#">Slimgur</a>
 			</h1>
-		</div>
+		</div> --}}
 </article>
 </header>
 
 {{!-- This will render all Ember Templates.  --}}
 <section id="main">
-	{{{outlet}}}
+  <div class=container>
+  	{{{outlet}}}
+  </div>
 </section>
 
 {{!-- Footer. Should contain relevant copyright-ish info, or just information. --}}
