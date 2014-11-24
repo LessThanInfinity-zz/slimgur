@@ -5,16 +5,28 @@ class CommentsController < ApplicationController
 
   def index
     @comments = Comment.all
-    respond_with(@comments)
+    # respond_with(@comments)
+    respond_with(@comments) do |format|
+      format.html
+      format.json {render json: @comments}
+    end
   end
 
   def show
-    respond_with(@comment)
+    # respond_with(@comment)
+    respond_with(@comment) do |format|
+      format.html
+      format.json {render json: @comment}
+    end
   end
 
   def new
     @comment = Comment.new
-    respond_with(@comment)
+    # respond_with(@comment)
+    respond_with(@comment) do |format|
+      format.html
+      format.json {render json: @comment}
+    end
   end
 
   def edit
@@ -23,17 +35,29 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.save
-    respond_with(@comment)
+    # respond_with(@comment)
+    respond_with(@comment) do |format|
+      format.html
+      format.json {render json: @comment}
+    end
   end
 
   def update
     @comment.update(comment_params)
-    respond_with(@comment)
+    # respond_with(@comment)
+    respond_with(@comment) do |format|
+      format.html
+      format.json {render json: @comment}
+    end
   end
 
   def destroy
     @comment.destroy
-    respond_with(@comment)
+    # respond_with(@comment)
+    respond_with(@comment) do |format|
+      format.html
+      format.json {render json: @comment}
+    end
   end
 
   private
