@@ -3,8 +3,12 @@
 Slimgur.Router.map(function() {
   // location: 'auto',
   // rootURL: '/',
-  this.resource('posts');
-  this.resource('post', { path: 'posts/:id' });
+  this.resource('posts', function(){
+  	this.route('new');
+  });
+  this.resource('post', { path: 'posts/:id' }, function(){
+  	this.route('edit');
+  });
 
   // this.resource('posts', { path: '/' }, function() {
 	 //  this.resource('post', { path: '/posts/:id' });  	
