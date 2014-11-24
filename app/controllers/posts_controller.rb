@@ -66,6 +66,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     # respond_with(@post)
+    # This pribabyl 
     respond_with(@post) do |format|
       format.html
       format.json {render json: @post}

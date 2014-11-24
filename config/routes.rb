@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_scope :user do
+    get "/sessions/current" => "ember_devise_simple_auth/sessions#show"
+  end
+
   resources :comments
 
   get 'static/index'
@@ -9,7 +13,7 @@ Rails.application.routes.draw do
 
   root to: 'static#index'
 
-  devise_for :users
+  devise_for :users, controllers: { sessions: 'ember_devise_simple_auth/sessions' }
   get '*path', to: 'static#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -67,6 +67,10 @@ gem 'acts_as_tree'
 # File upload
 gem 'paperclip'
 
+# Serialization. Should have been included with ember. 
 gem 'active_model_serializers'
+
+# ember-devise-simple-auth
+gem "ember_devise_simple_auth"
 
 ruby "2.1.2"

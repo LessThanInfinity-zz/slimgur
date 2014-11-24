@@ -1,6 +1,11 @@
 <h2>{{title}}</h2>
 <p>by {{uploadedBy}}</p>
-<p><img {{bind-attr src='imageURL'}}></img>
+
+{{#if imageURL}}
+	<p><img {{bind-attr src='imageURL'}}></img>
+{{else}}
+	<h2> LOADING </h2>
+{{/if}}
 
 <p>{{description}}</p>
 <p>Tags: {{tagList}}</p>
