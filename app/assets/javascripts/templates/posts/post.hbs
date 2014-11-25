@@ -1,5 +1,5 @@
-<div class='container'>
-	<div class='post-container color-grey col-md-7'>
+<div class='container-fluid'>
+	<div class='post-container color-grey col-md-6'>
 
 				<div class='head-div'>
 					<p class='post-title'>{{title}}</p>
@@ -18,7 +18,13 @@
 						{{description}}
 				</div>
 
+	
 				<div class="stats-div">
+					<span class='glyphicon glyphicon-chevron-up stats-icon'></span>
+					<span class='glyphicon glyphicon-chevron-down stats-icon'></span>
+					<span class='glyphicon glyphicon-heart stats-icon'></span>
+					<span>VoteBar</span>
+
 					<p>Tags: {{tagList}}</p>
 					<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
 					<p> Favorited: {{isFavorite}}</p>
