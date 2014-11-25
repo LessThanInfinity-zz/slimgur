@@ -1,16 +1,10 @@
 <div class='container'>
-	<div class='contains_post color-grey col-md-8'>
-
-		{{!-- <div class='row'> --}}
+	<div class='post-container color-grey col-md-7'>
 
 				<div class='head-div'>
 					<p class='post-title'>{{title}}</p>
 					<p class='post-uploader'>by {{uploadedBy}}</p>
 				</div>
-
-		{{!-- </div> --}}
-
-		{{!-- <div class='row'> --}}
 
 				<div class="image-div">
 						{{#if imageURL}}
@@ -20,17 +14,9 @@
 						{{/if}}
 				</div>
 
-		{{!-- </div> --}}
-
-		{{!-- <div class='row'> --}}
-
 				<div class="well well-sm desc-div">
 						{{description}}
 				</div>
-
-		{{!-- </div> --}}
-
-		{{!-- <div class='row'> --}}
 
 				<div class="stats-div">
 					<p>Tags: {{tagList}}</p>
@@ -38,7 +24,10 @@
 					<p> Favorited: {{isFavorite}}</p>
 				</div>
 
-		{{!-- </div> --}}
+	</div> {{!-- End post-container --}}
 
-	</div>
+	<div class='col-sm-4 side-gallery'>
+		This will have buttons, and random posts. 
+	</div> {{!-- End side-gallery --}}
+
 </div>

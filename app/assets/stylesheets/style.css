@@ -24,7 +24,7 @@ body {
 	background-color: #2B2B2B;	
 }
 
-.contains_post{
+.post-container{
 	padding: 25px;
 	border-radius: 10px;
 	/*background-color: red;*/
@@ -65,4 +65,10 @@ body {
 	border: none;
 	border-radius: 4px;
 	box-shadow: none;
+}
+
+.side-gallery{
+	background: #2B2B2B;
+	height: 800px;
+	margin: 0px 10px;
 }
