@@ -1,3 +1,13 @@
-body {
-	background-color: black;
+body, div {
+	background-color: #000000;
+	color: white;
+}
+
+.navbar-custom{
+	background-color: #2B2B2B;
+	color: red;
+}
+
+#navbar-upload:hover{
+	background-color: #1E6077;
 }
