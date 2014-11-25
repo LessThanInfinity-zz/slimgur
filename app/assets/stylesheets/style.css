@@ -12,12 +12,30 @@ body, div {
 	background-color: #1E6077;
 }
 
+.color-grey{
+	background-color: #2B2B2B;	
+}
+
 .contains_post{
-	background-color: #2B2B2B;
-	padding-left: 28px;
+	/*padding-left: 28px;*/
+	padding-top: 1px;
 	border-radius: 10px;
 }
 
-.head-div, .image-div, .desc-div, .stats-div{
+.head-div, .stats-div, .row{
 	background-color: inherit;
+}
+
+.image-div, .desc-div{
+	background-color: #181817;
+	margin: 10px 0px 10px 0px;
+}
+
+.image-div{
+	/*padding-left: 28px;*/
+}
+
+.pad-left {
+	padding-left: 28px;
+	/*background-color: red;*/
 }
