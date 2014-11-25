@@ -11,3 +11,13 @@ body, div {
 #navbar-upload:hover{
 	background-color: #1E6077;
 }
+
+.contains_post{
+	background-color: #2B2B2B;
+	padding-left: 28px;
+	border-radius: 10px;
+}
+
+.head-div, .image-div, .desc-div, .stats-div{
+	background-color: inherit;
+}
