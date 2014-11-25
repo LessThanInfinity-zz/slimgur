@@ -1,6 +1,14 @@
+html, body {
+	height: 100%;
+}
+
 body, div {
 	background-color: #000000;
 	color: white;
+}
+
+body {
+	font-family: Arial, sans-serif;
 }
 
 .navbar-custom{
@@ -17,9 +25,9 @@ body, div {
 }
 
 .contains_post{
-	/*padding-left: 28px;*/
-	padding-top: 1px;
+	padding: 25px;
 	border-radius: 10px;
+	/*background-color: red;*/
 }
 
 .head-div, .stats-div, .row{
@@ -35,7 +43,26 @@ body, div {
 	/*padding-left: 28px;*/
 }
 
-.pad-left {
-	padding-left: 28px;
-	/*background-color: red;*/
+.post-img{
+	width: 100%;
+	height: auto;
+	max-height: auto;
+	max-width: auto;
+	/*margin: 0 auto;*/
+}
+
+.post-title{
+	font-size: 20px;
+}
+
+.post-uploader{
+	font-size: 13px;
+	margin: -5px 0px 15px 0px;
+}
+
+.well{
+	background: rgb(24,24,23);
+	border: none;
+	border-radius: 4px;
+	box-shadow: none;
 }

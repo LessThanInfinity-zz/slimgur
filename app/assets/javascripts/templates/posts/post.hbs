@@ -1,49 +1,44 @@
 <div class='container'>
-	<div class='contains_post color-grey'>
+	<div class='contains_post color-grey col-md-9'>
 
-		<div class='row pad-left'>
-			<div class='col-md-11 color-grey'>
+		{{!-- <div class='row'> --}}
+
 				<div class='head-div'>
-					<h2>{{title}}</h2>
-					<p>by {{uploadedBy}}</p>
+					<p class='post-title'>{{title}}</p>
+					<p class='post-uploader'>by {{uploadedBy}}</p>
 				</div>
-			</div>
-		</div>
 
-		<div class='row pad-left'>
-			<div class="image-div">
-					{{#if imageURL}}
-						<img {{bind-attr src='imageURL'}}></img>
-					{{else}}
-						<h2> LOADING </h2>
-					{{/if}}
-			</div>
-		</div>
+		{{!-- </div> --}}
 
-		<div class='row pad-left'>
-			<div class="desc-div ">
-					<p>{{description}}</p>
-			</div>
-		</div>
+		{{!-- <div class='row'> --}}
 
-		<div class='row pad-left'>
-			<div class="stats-div">
-				<p>Tags: {{tagList}}</p>
-				<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
-				<p> Favorited: {{isFavorite}}</p>
-			</div>
-		</div>
+				<div class="image-div">
+						{{#if imageURL}}
+							<img {{bind-attr src='imageURL'}} class='post-img'></img>
+						{{else}}
+							<h2> LOADING </h2>
+						{{/if}}
+				</div>
 
-		<h4> comments: </h4>
-			<ul> 
-				{{#each comment in comments}}
-					<li>{{comment.body}}</li>
-					<ul>
-						{{#each child in comment.children}}
-						<li>Child: {{child.body}}</li>
-						{{/each}}
-					</ul>
-				{{/each}}
-			</ul>
+		{{!-- </div> --}}
+
+		{{!-- <div class='row'> --}}
+
+				<div class="well well-sm desc-div">
+						{{description}}
+				</div>
+
+		{{!-- </div> --}}
+
+		{{!-- <div class='row'> --}}
+
+				<div class="stats-div">
+					<p>Tags: {{tagList}}</p>
+					<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
+					<p> Favorited: {{isFavorite}}</p>
+				</div>
+
+		{{!-- </div> --}}
+
 	</div>
 </div>
