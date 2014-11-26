@@ -22,7 +22,7 @@ Slimgur.Post = DS.Model.extend({
 	numDownvotes: DS.attr('number'),
 	isFavorite: DS.attr('boolean'),
 
-	comments: DS.hasMany('comment', {async: true})
-
+	comments: DS.hasMany('comment', {async: true}),
+	user: DS.belongsTo('user', {async: true}),
 	// user: DS.belongsTo('user')
 });

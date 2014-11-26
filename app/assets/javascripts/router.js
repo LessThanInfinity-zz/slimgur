@@ -6,16 +6,14 @@ Slimgur.Router.map(function() {
   this.resource('posts', {path: '/'}, function(){
   	this.route('new');
   });
+
+  this.resource('user', {path: 'users/:id'}, function(){
+    this.route('show');
+  });
+
+
   this.resource('post', { path: 'posts/:id' }, function(){
   	this.route('edit');
   });
 
-  // this.resource('posts', { path: '/' }, function() {
-	 //  this.resource('post', { path: '/posts/:id' });  	
-  // });
-
 });
-
-// App.Router.map(function() {
-//   this.resource('leads', { path: '/' })
-// })
