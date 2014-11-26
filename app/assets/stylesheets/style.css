@@ -89,3 +89,8 @@ body {
 .stats-icon:hover{
 	color: #89C624;
 }
+
+.popularity-bar{
+	width: 200px;
+	height: 10px;
+}

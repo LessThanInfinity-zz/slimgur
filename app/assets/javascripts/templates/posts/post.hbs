@@ -18,8 +18,8 @@
 						{{description}}
 				</div>
 
-	
 				<div class="stats-div">
+				{{!-- <div class='row'> --}}
 					<span class='glyphicon glyphicon-chevron-up stats-icon'></span>
 					<span class='glyphicon glyphicon-chevron-down stats-icon'></span>
 					<span class='glyphicon glyphicon-heart stats-icon'></span>
@@ -28,7 +28,15 @@
 					<p>Tags: {{tagList}}</p>
 					<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
 					<p> Favorited: {{isFavorite}}</p>
-				</div>
+						<div class="progress popularity-bar col-md-2">
+
+						  <div class="progress-bar progress-bar-success" role="progressbar" title= "22 likes" {{bind-attr style="popularity"}}>
+						    <span class="sr-only">60% Complete</span>
+						  </div>
+
+						</div>
+
+			</div> {{!-- End stats row --}}
 
 	</div> {{!-- End post-container --}}
 
