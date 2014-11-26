@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   end
 
   resources :comments
+  resources :users, only: [:show]
 
   get 'static/index'
 
