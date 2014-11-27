@@ -128,6 +128,20 @@ a:hover {
 .popularity-bar{
 	width: 100%;
 	height: 10px;
+	opacity: 0.8;
+
+	background-image: none;
+	background-color: #e44;
+}
+
+.popularity-div *:hover{
+	opacity: 1;
+}
+
+#upvoteBar{
+	background-image: none;
+	/*background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);*/
+  background-color: #89C624;
 }
 
 

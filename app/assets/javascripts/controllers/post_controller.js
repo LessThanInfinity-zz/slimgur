@@ -10,8 +10,7 @@ Slimgur.PostController = Ember.ObjectController.extend({
 	popularity: function(){
 		var that = this;
 		var percent= ( that.get('numUpvotes')/(that.get('numUpvotes')+that.get('numDownvotes')) ) * 100;
-		// var progressBarStyle= "width: "+ percent.toString() + "%;";
-		// debugger
+
 		that.set('percentValue', percent);
 		if (isNaN(percent)){
 			return "width: 100%"
@@ -19,11 +18,5 @@ Slimgur.PostController = Ember.ObjectController.extend({
 			return "width: "+ percent.toString() + "%;";
 		}
 
-		// debugger
-		// that.set('progressBarWidth', progressBarStyle);
-
 	}.property('numUpvotes','numDownvotes'),
-	// uploadedBy: function(){
-	// 	return this.store.find
-	// }
 })
