@@ -25,4 +25,9 @@ Slimgur.Post = DS.Model.extend({
 	comments: DS.hasMany('comment', {async: true}),
 	user: DS.belongsTo('user', {async: true}),
 	// user: DS.belongsTo('user')
+
+	tags: function(){
+		var that = this;
+		return that.get('tagList').split(',')
+	}.property('tagList')
 });

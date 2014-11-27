@@ -19,10 +19,13 @@
 		</div>
 
 		<div class="stats-div">
+			<div class='vote-div'>
+				<div class='glyphicon glyphicon-chevron-up stats-icon'></div>
+				<div class='glyphicon glyphicon-chevron-down stats-icon'></div>
+			</div>
 
-			<div class='glyphicon glyphicon-chevron-up stats-icon'></div>
-			<div class='glyphicon glyphicon-chevron-down stats-icon'></div>
-			<div class='glyphicon glyphicon-heart stats-icon'></div>
+
+			<div class='glyphicon glyphicon-heart stats-icon '></div>
 
 			<div class="popularity-div text-center color-grey">
 
@@ -35,9 +38,17 @@
 				</div>
 			</div> {{!-- End popularity-div --}}
 
-			
-			<p>Tags: {{tagList}}</p>
-			<p>Upvotes: {{numUpvotes}} | Downvotes: {{numDownvotes}}</p>
+			<div class='tags-div color-grey'>
+				<span class='glyphicon glyphicon-tag tag-icon vcenter'></span>
+				<div class='tag-text'>
+					<div class='tag-list'>
+						{{#each tag in tags}}
+							{{tag}},
+						{{/each}}
+					</div><br />
+					<div class='recommend-tags'>Recommend Tags</div>
+				</div>
+			</div>
 			<p> Favorited: {{isFavorite}}</p>
 
 		</div> {{!-- End stats-div --}}
