@@ -1,10 +1,11 @@
 <div class='container-fluid'>
-	<div class='post-container color-grey col-md-6'>
+	<div class='post-container color-grey col-md-6 col-md-offset-1'>
 
 				<div class='head-div'>
-					<p class='post-title'>{{title}}</p>
-					<p class='post-uploader'>by {{uploadedBy}}</p>
+					<h4 class='post-title'>{{title}}</h4>
+					<p class='post-uploader'>by {{#link-to 'user.show' user}}{{uploadedBy}}{{/link-to}}</p>
 				</div>
+
 
 				<div class="image-div">
 						{{#if imageURL}}
@@ -19,7 +20,6 @@
 				</div>
 
 				<div class="stats-div">
-				{{!-- <div class='row'> --}}
 					<span class='glyphicon glyphicon-chevron-up stats-icon'></span>
 					<span class='glyphicon glyphicon-chevron-down stats-icon'></span>
 					<span class='glyphicon glyphicon-heart stats-icon'></span>
@@ -36,7 +36,7 @@
 
 						</div>
 
-			</div> {{!-- End stats row --}}
+				</div> {{!-- End stats-div --}}
 
 	</div> {{!-- End post-container --}}
 
