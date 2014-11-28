@@ -60,12 +60,13 @@
 
 		<p> Favorited: {{isFavorite}}</p>
 
-		<ul>
+		{{!-- <ul class='comment-list'> --}}
 			{{#each comment in comments}}
-				<li>{{comment.body}}</li>
+				{{!-- <li class='comment-list-item'> {{render "comment" comment}}</li> --}}
+				{{render "comment" comment}}
 			{{/each}}
 
-		</ul>
+		{{!-- </ul> --}}
 	
 	</div> {{!-- End post-container --}}
 
