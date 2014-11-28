@@ -49,9 +49,23 @@
 					<div class='recommend-tags'>Recommend Tags</div>
 				</div>
 			</div>
-			<p> Favorited: {{isFavorite}}</p>
-
 		</div> {{!-- End stats-div --}}
+
+
+		{{!-- <div class='submit-comment'> --}}
+		{{!-- This is temporary --}}
+			{{input type='text' class='well well-sm submit-comment' placeholder="Submit a comment... "}}
+		{{!-- </div> --}}
+
+
+		<p> Favorited: {{isFavorite}}</p>
+
+		<ul>
+			{{#each comment in comments}}
+				<li>{{comment.body}}</li>
+			{{/each}}
+
+		</ul>
 	
 	</div> {{!-- End post-container --}}
 
