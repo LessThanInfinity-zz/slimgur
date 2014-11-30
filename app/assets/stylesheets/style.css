@@ -284,7 +284,9 @@ a:hover {
 	height: 50px;
 	line-height: 50px;
 	background-color: #2b2b2b;
+	/*background-color: transparent;*/
 }
+
 
 .main-navigation{
 	display: inline-block;
@@ -297,7 +299,12 @@ a:hover {
 	height: 100%;
 	font-size: 1.3em;
 	line-height: 50px;
-	margin: 0 7px;
+	margin: 0 1px;
+	padding: 0 10px;
+}
+
+.main-navigation *:hover{
+	background-color: #444442;
 }
 
 .user-account{
@@ -323,8 +330,9 @@ a:hover {
 
 .nav-upload *{
 	font-size: 1em;
-	margin: 0 2px;
+	margin: 0 1px;
 	background-color: transparent;
+	padding: 0 3px;
 }
 
 .nav-upload:hover{
@@ -337,7 +345,8 @@ a:hover {
 
 .logo{
 	font-size: 1.7em;
-	margin-right: 30px;
+	margin-right: 10px;
+	color: white;
 
 }
 
