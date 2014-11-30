@@ -257,3 +257,96 @@ a:hover {
 	background: rgb(24,24,23);
 	/*width: 100%;*/
 }
+
+#topbar{
+	width: 100%;
+	background-color: #2b2b2b;
+	font-size: 15px;
+	height: 50px;
+	font-weight: 700;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0 0 11px 1px #111;
+	-webkit-box-shadow: 0 0 11px 1px #111;
+
+	margin: 0px 0px 10px 0px;
+	display: inline-block;
+}
+
+.topbar-elements{
+/*	width: 1000px;
+	margin: 0 auto;
+	position: relative;*/
+}
+
+.topbar-elements *{
+	/*border: solid 1px red;*/
+	height: 50px;
+	line-height: 50px;
+	background-color: #2b2b2b;
+}
+
+.main-navigation{
+	display: inline-block;
+	/*border: solid 1px red;*/
+}
+
+.main-navigation *{
+	float: left;
+	/*border: solid 1px green;*/
+	height: 100%;
+	font-size: 1.3em;
+	line-height: 50px;
+	margin: 0 7px;
+}
+
+.user-account{
+	/*float: right;*/
+
+}
+
+.nav-justify-menu{
+	font-size: 1em;
+}
+
+.nav-upload-icon{
+	font-size: 1.5em;
+}
+
+.nav-random-icon{
+	font-size: 1em;
+}
+
+.nav-upload{
+	padding: 0 10px;
+}
+
+.nav-upload *{
+	font-size: 1em;
+	margin: 0 2px;
+	background-color: transparent;
+}
+
+.nav-upload:hover{
+	background-color: #1E6077;
+}
+
+.nav-upload *:hover{
+	background-color: #1E6077;
+}
+
+.logo{
+	font-size: 1.7em;
+	margin-right: 30px;
+
+}
+
+.user-account{
+	float: right;
+}
+
+/* This media query needs a redo. */
+@media only screen and (max-device-width: 1065px) {
+    .nav-upload-text{display:none;}
+}
+
