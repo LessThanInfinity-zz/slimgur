@@ -1,0 +1,30 @@
+<div class='container-fluid posts-container'>
+    <div class="col-lg-12 posts-heading-div">
+        <h3 class="text-center posts-title">The Most Viral images on this small database, sorted by popularity</h3>
+    </div>
+
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 posts-div">
+        {{#each post in model}}
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                {{#link-to 'post.show' post}}
+            		<div class="thumbnail post-preview" >
+                        <img class="img-responsive" {{bind-attr src='post.imageURL'}} alt="">
+                    </div>
+                {{/link-to}}
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+        <!-- <hr> -->
+
+        <!-- Footer -->
+<!--         <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+ -->
+

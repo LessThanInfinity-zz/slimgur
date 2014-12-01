@@ -269,7 +269,7 @@ a:hover {
 	box-shadow: 0 0 11px 1px #111;
 	-webkit-box-shadow: 0 0 11px 1px #111;
 
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 7px 0px;
 	display: inline-block;
 }
 
@@ -347,15 +347,57 @@ a:hover {
 	font-size: 1.7em;
 	margin-right: 10px;
 	color: white;
+	padding-right: 10px;
+}
 
+.logo:hover{
+	background-color: #444442;
 }
 
 .user-account{
 	float: right;
 }
 
+.posts-div{
+	background-color: #2B2B2B;
+	padding: 22px;
+	border-radius: 20px;
+}
+
+.posts-div *{
+	background-color: #2B2B2B;
+}
+.posts-heading-div{
+	/* padding: 10px 0px; */
+	/* border: solid 1px red; */
+	margin: 0px 0px 30px 0px;
+	color: white;
+}
+
+.posts-title{
+	font-size: 1.9em;
+}
+
 /* This media query needs a redo. */
 @media only screen and (max-device-width: 1065px) {
     .nav-upload-text{display:none;}
 }
+.post-preview{
+	/*width:400px;*/
+	/*height:300px;*/
+	overflow: hidden;
+	display: block;
+	padding: 1px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	/*background-color: #fff;*/
+	border: 3px solid #444442;
+	border-radius: 0px;
+}
+
+.post-preview:hover{
+	border: 3px solid #C29F37;
+	transition: none;
+}
+
 

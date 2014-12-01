@@ -13,7 +13,8 @@ Slimgur.Router.map(function() {
 
 
   this.resource('post', { path: 'posts/:id' }, function(){
-  	this.route('edit');
+  	this.route('show');
+    // this.route('show');
   });
 
 });
