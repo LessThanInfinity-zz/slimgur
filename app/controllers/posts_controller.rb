@@ -44,7 +44,8 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.user_id = current_user.id
+    @post.user_id = 1;
+    # @post.user_id = current_user.id
 
     @post.save
     respond_with(@post) do |format|
