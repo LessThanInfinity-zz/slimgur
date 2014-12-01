@@ -386,18 +386,33 @@ a:hover {
 	/*width:400px;*/
 	/*height:300px;*/
 	overflow: hidden;
-	display: block;
+	display: inline-block;
 	padding: 1px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	line-height: 1.42857143;
 	/*background-color: #fff;*/
 	border: 3px solid #444442;
 	border-radius: 0px;
+
+	width: 100%;
+	height: 100%;
 }
 
 .post-preview:hover{
 	border: 3px solid #C29F37;
 	transition: none;
+}
+
+.preview-img{
+	width: 100%;
+	/*height: 300px;*/
+
+	outline: 1px solid #121211;
+	outline-offset: -1px;
+}
+
+.thumb{
+	padding: 2px;
 }
 
 
