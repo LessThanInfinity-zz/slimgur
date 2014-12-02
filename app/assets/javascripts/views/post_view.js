@@ -5,5 +5,6 @@ Slimgur.PostView = Ember.View.extend({
 
   didInsertElement: function(){
   	console.log('in post page.');
+  	debugger
   }
 });
