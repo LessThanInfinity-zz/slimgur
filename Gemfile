@@ -71,6 +71,6 @@ gem 'paperclip'
 gem 'active_model_serializers'
 
 # ember-devise-simple-auth
-gem "ember_devise_simple_auth"
+# gem "ember_devise_simple_auth"
 
 ruby "2.1.2"

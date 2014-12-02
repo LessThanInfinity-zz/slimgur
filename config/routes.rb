@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  devise_scope :user do
-    get "/sessions/current" => "ember_devise_simple_auth/sessions#show"
-  end
+  # devise_scope :user do
+  #   get "/sessions/current" => "ember_devise_simple_auth/sessions#show"
+  # end
 
   resources :comments
   resources :users, only: [:show]
@@ -14,7 +14,8 @@ Rails.application.routes.draw do
 
   root to: 'static#index'
 
-  devise_for :users, controllers: { sessions: 'ember_devise_simple_auth/sessions' }
+  devise_for :users
+
   get '*path', to: 'static#index'
 
   

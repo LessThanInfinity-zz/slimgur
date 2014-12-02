@@ -20,4 +20,7 @@ Slimgur.Router.map(function() {
     // this.route('show');
   });
 
+
+  // this.route('sign-in');
+  // this.route('sign-out');
 });

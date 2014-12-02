@@ -1,3 +1,4 @@
 Slimgur.ApplicationController = Ember.Controller.extend({
-  signedIn: false
+	// needs: ['currentUser'],
+  // signedIn: false
 });
