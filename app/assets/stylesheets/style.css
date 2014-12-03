@@ -413,4 +413,49 @@ a:hover {
 	/*border: solid 1px red;*/
 }
 
+/* Buttons for navigation. */
+.prev-next{
+	/*border: solid 1px red;*/
+	padding: 0px;
+	border: 2px solid #404040;
+	float: left;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.button-div{
+	/*margin: 0px;*/
+	padding: 0px;
+}
+
+.button-div *{
+	background-color:red;
+	line-height: 42px;
+}
+.previous-button{
+	width: 100%;
+	border-radius: 4px;
+}
+
+.next-button{
+	width: 100%;
+	border-radius: 4px;
+}
+
+.browse-button{
+	/*float: right;*/
+	line-height: 37px;
+	/*float:right;*/
+	width: 100%;
+	margin-left: 5px;
+	border: 2px solid #404040;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.buttons-row{
+	/*display: inline-block;*/
+}
 

@@ -30,8 +30,9 @@
         <div class='col-md-2 col-sm-2 user-account'>
           {{#if currentUser}}
             {{#link-to 'user.show' currentUser}}{{currentUser.username}}{{/link-to}}
+          {{else}}
+            Sign-in
           {{/if}}
-          Needs user check-in
         </div>
       </div>
 

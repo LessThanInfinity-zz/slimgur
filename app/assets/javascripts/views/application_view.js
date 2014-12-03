@@ -6,6 +6,6 @@ Slimgur.ApplicationView = Ember.View.extend({
   didInsertElement: function(){
   	var that = this;
   	console.log('in app page.');
-  	debugger
+  	// debugger
   }
 });
