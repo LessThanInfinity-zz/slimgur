@@ -24,12 +24,12 @@ Slimgur.PostController = Ember.ObjectController.extend({
   advancePost: function(delta) {
   	var that = this;
   	var posts = that.get('controllers.posts');
-  	debugger
+  	// debugger
   	var index = posts.indexOf(that.get('content')) + delta;
   	if (index >= 0 && index <= posts.get('length')-1) {
     	that.transitionToRoute('post', posts.objectAt(index));
   	}
-  	console.log('posts?', posts.get('posts').toArray());
+  	// console.log('posts?', posts.get('posts').toArray());
   	// debugger
 	},
 
