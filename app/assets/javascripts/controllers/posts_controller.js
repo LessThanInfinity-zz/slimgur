@@ -1,7 +1,15 @@
-// Slimgur.PostsController = Ember.ArrayController.extend({
-	// model: function(){
-	// 	return this.store.find('post');
-	// 	// return [{title: 'fixture'}, {title: '2'}]
-	// }
+Slimgur.PostsController = Ember.ArrayController.extend({
+	testProperty: "This is a test",
+	// posts: function(){
+	// 	var that = this;
+	// 	console.log('posts fired. ', that.get('model').toArray())
+	// 	return that.get('content');
+	// }.property('model'),
+	modelObserver: function(){
+		var that = this;
+		// return model;
+		// that.set('posts', that.get('model'));
+		// debugger
+	}.observes('model'),
 
-// })
+})
