@@ -430,7 +430,7 @@ a:hover {
 }
 
 .button-div *{
-	background-color:red;
+	/*background-color:red;*/
 	line-height: 42px;
 }
 .previous-button{
@@ -445,8 +445,8 @@ a:hover {
 
 .browse-button{
 	/*float: right;*/
-	line-height: 37px;
-	/*float:right;*/
+	line-height: 42px;
+	float:right;
 	width: 100%;
 	margin-left: 5px;
 	border: 2px solid #404040;
@@ -457,5 +457,6 @@ a:hover {
 
 .buttons-row{
 	/*display: inline-block;*/
+	border-radius: ine;
 }
 
