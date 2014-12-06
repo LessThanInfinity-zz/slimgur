@@ -1,14 +1,14 @@
 <div class='container-fluid posts-container'>
     <div class="col-lg-12 posts-heading-div">
-        <h3 class="text-center posts-title">The Most Viral images on this small database, sorted by popularity</h3>
+        <h3 class="text-center posts-title">The Most Viral images on this small database, sorted by <span {{action 'sort' 'title'}} ><i >popularity</i></span></h3>
     </div>
 
     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 posts-div">
-        {{#each post in model}}
+        {{#each this}}
             <div class="col-lg-3 col-md-4 col-sm-6 thumb">
-                {{#link-to 'post.show' post}}
+                {{#link-to 'post.show' this}}
             		<div class="post-preview" >
-                        <img class="img-responsive preview-img" {{bind-attr src='post.imageURL'}} alt="">
+                        <img class="img-responsive preview-img" {{bind-attr src='imageURL'}} alt="">
                     </div>
                 {{/link-to}}
             </div>
