@@ -5,6 +5,7 @@ Slimgur.Router.map(function() {
   // rootURL: '/',
   this.resource('posts', {path: '/'}, function(){
     // this.route('index', {path: '/'});
+    this.route('new');
   });
 
   this.route('new', {path: '/new'}, function(){
@@ -18,10 +19,11 @@ Slimgur.Router.map(function() {
 
   this.resource('post', { path: 'posts/:id' }, function(){
   	this.route('show');
+    this.route('edit');
     // this.route('show');
   });
 
 
-  // this.route('sign-in');
-  // this.route('sign-out');
+  this.route('sign_in');
+  this.route('sign_out');
 });

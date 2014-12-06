@@ -14,7 +14,8 @@ Rails.application.routes.draw do
 
   root to: 'static#index'
 
-  devise_for :users
+  # devise_for :users
+  devise_for :users, :controllers => { :sessions => "json_sessions" }
 
   get '*path', to: 'static#index'
 

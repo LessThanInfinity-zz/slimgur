@@ -8,7 +8,6 @@
           slimgur  
         </div>
         {{/link-to}}
-        
 
         <div class='col-md-5 col-sm-5 main-navigation'>
           <div class='glyphicon glyphicon-align-justify nav-justify-menu'>
@@ -30,8 +29,10 @@
         <div class='col-md-2 col-sm-2 user-account'>
           {{#if currentUser}}
             {{#link-to 'user.show' currentUser}}{{currentUser.username}}{{/link-to}}
+            {{#link-to 'sign_out'}}Sign Out{{/link-to}}
           {{else}}
-            Sign-in
+          {{#link-to 'sign_in' }}Sign In{{/link-to}}
+            {{!-- Sign-in --}}
           {{/if}}
         </div>
       </div>

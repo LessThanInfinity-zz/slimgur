@@ -11,6 +11,6 @@ Slimgur.ApplicationController = Ember.Controller.extend({
 		var currUserController = that.get('currentUserController');
 		return currUserController.get('model');
 
-	}.property('controllers.currentUser')
-  // signedIn: false
+	}.property('controllers.currentUser'),
+  signedIn: false
 });
