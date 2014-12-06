@@ -1,5 +1,5 @@
 <div class='container-fluid'>
-	<div class='post-container color-grey col-md-6 col-md-offset-1'>
+	<div class='post-container color-grey col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1'>
 
 		<div class='head-div'>
 			<h4 class='post-title'>{{title}}</h4>
@@ -73,18 +73,20 @@
 	<div class='col-sm-4 side-gallery'>
 		<div class='buttons-row'>
 			<!-- Next/Prev -->
-			<div class='col-md-7 col-md-offset-1 prev-next'>
-				<div class='col-sm-6 text-center button-div'>
+			<div class='col-sm-7 col-md-7 prev-next'>
+				<div class='col-sm-6 col-md-6 text-center button-div'>
 					<div class='btn navigation-btn previous-button' {{action 'previousPost'}}>Prev</div>
 				</div>
-				<div class='col-sm-6 text-center button-div'>
+				<div class='col-sm-6 col-md-6 text-center button-div'>
 					<div class='btn navigation-btn next-button' {{action 'nextPost'}}>Next</div>
 				</div>
 			</div>
 
 			<!-- Browse -->
-			<div class='col-md-4 col-md-offset-1 text-center button-div browse'>
-				<a href="#"><div class='btn navigation-btn browse-button'>Browse</div></a>
+			<div class='col-sm-4 col-md-4 text-center button-div browse'>
+				<div class='col-sm-12 col-md-12 text-center button-div'>
+					<a href="#"><div class='btn navigation-btn browse-button'>Browse</div></a>
+				</div>
 			</div>
 		</div>
 	</div> {{!-- End side-gallery --}}

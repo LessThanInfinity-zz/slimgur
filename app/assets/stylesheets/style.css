@@ -78,7 +78,7 @@ a:hover {
 /*==================================*/
 .side-gallery{
 	background: #2B2B2B;
-	height: 800px;
+	/*height: 800px;*/
 	margin: 0px 10px;
 	padding: 18px 25px;
 }
