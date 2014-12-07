@@ -81,6 +81,7 @@ a:hover {
 	/*height: 800px;*/
 	margin: 0px 10px;
 	padding: 18px 25px;
+	display: inline-block;
 }
 
 /* Stats-div Emporium (still in Posts Show) */
@@ -414,6 +415,10 @@ a:hover {
 .thumb{
 	padding: 2px 4px;
 	/*border: solid 1px red;*/
+}
+.buttons-row{
+	padding: 0px;
+	margin: 0px;
 }
 
 /* Buttons for navigation. */

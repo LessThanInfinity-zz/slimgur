@@ -12,14 +12,14 @@
   <% end %>
 </head>
 <body>
-<%= yield %>
 
 <!-- <div class='container'> -->
 <% if user_signed_in? %>
 <%= current_user.username %>
 <% end %>
-	<div id="ember-app">
-	</div>
+  <div id="ember-app">
+  </div>
+<%= yield %>
 <!-- </div> -->
 
 </body>

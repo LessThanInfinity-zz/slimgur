@@ -8,9 +8,9 @@ Slimgur.Router.map(function() {
     this.route('new');
   });
 
-  this.route('new', {path: '/new'}, function(){
+  // this.route('new', {path: '/new'}, function(){
 
-  });
+  // });
 
   this.resource('user', {path: 'users/:id'}, function(){
     this.route('show');

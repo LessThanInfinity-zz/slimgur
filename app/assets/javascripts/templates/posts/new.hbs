@@ -1,0 +1,10 @@
+<h2>New Post</h2>
+<form>
+  <p>Title:<br/> {{input value=fields.title}}</p>
+  <p>Description:<br/> {{textarea value=fields.description}}</p>
+  {{!-- <p>File: <br /> <input type="file" name="file" value="fields.image"></p> --}}
+  {{!-- <p>Description:<br/> {{textarea value=fields.description}}</p> --}}
+  {{!-- <p>Upload file:<br/> {{input type=file value=fields.image}}</p> --}}
+  	{{!-- <p>Upload file:<br/> {{file value=fields.image}}</p> --}}
+  <p><button {{action "createPost"}}>Create</button></p>
+</form>
