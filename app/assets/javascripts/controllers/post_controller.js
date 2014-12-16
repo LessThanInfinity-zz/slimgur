@@ -40,5 +40,15 @@ Slimgur.PostController = Ember.ObjectController.extend({
 	  previousPost: function() {
 	    this.advancePost(-1);
 	  },
+
+	  createUpvote: function(){
+	  	
+	  },
+
+	  createDownvote: function(){
+
+	  },
+
+
 	}
 })
