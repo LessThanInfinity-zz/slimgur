@@ -1,0 +1,530 @@
+html, body {
+	height: 100%;
+}
+
+body, div {
+	background-color: #000000;
+	color: #ddddd1;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Border radius common */
+
+.post-container, .side-gallery{
+	border-radius: 12px;
+}
+
+.color-grey{
+	background-color: #2B2B2B;	
+}
+
+/* Post Show Page. */
+/*==========================*/
+.post-container{
+	padding: 10px 25px;
+	background-color: #2B2B2B;	
+}
+
+.head-div, .stats-div, .row{
+	background-color: inherit;
+}
+
+.image-div, .desc-div{
+	background-color: #181817;
+	margin: 10px 0px 10px 0px;
+}
+
+.image-div{
+	/*padding-left: 28px;*/
+}
+
+.post-img{
+	width: 100%;
+	height: auto;
+	max-height: auto;
+	max-width: auto;
+	/*margin: 0 auto;*/
+}
+
+.post-title{
+	font-size: 20px;
+}
+
+.post-uploader{
+	font-size: 13px;
+	margin: -5px 0px 15px 0px;
+}
+
+.well{
+	background: rgb(24,24,23);
+	border: none;
+	border-radius: 4px;
+	box-shadow: none;
+}
+
+a:link, a:active, a:visited, a strong {
+color: #4E76C9;
+text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Side Gallery. */
+/*==================================*/
+.side-gallery{
+	background: #2B2B2B;
+	/*height: 800px;*/
+	margin: 0px 10px;
+	padding: 18px 25px;
+	display: inline-block;
+}
+
+/* Stats-div Emporium (still in Posts Show) */
+/*=======================*/
+
+.stats-icon{
+	font-size: 2.2em;
+	padding: 3px;
+	border: solid 2px black;
+	border-radius: 3px;
+	float: left;
+
+	border-bottom: 1px solid #4c4a4f;	
+	background-color: #2b2b2b;
+	border-radius: 4px;
+	opacity: .8;
+	cursor: pointer;
+}
+
+.stats-icon:hover{
+	color: #89C624;
+}
+
+.popularity-div{
+	font-size: 1em;
+	display: inline-block;
+	width: 100px;
+	float: left;
+	padding: 3px;
+	height: 35px;
+}
+
+.stats-div{
+	/*background-color: red;*/
+	display: inline-block;
+	width: 100%;
+}
+
+.vote-div{
+	display: inline-block;
+	float: left;
+	margin: 0px 12px 0px 0px;
+}
+
+.favorite{
+	margin: 0px 0px 0px 0px;
+}
+
+.popularity-div{
+	/*margin: 0px 0px 0px 0px;*/
+	margin: 0px 14px;
+}
+
+.popularity-bar{
+	width: 100%;
+	height: 9px;
+	opacity: 0.8;
+
+	background-image: none;
+	background-color: #e44;
+}
+
+.popularity-div *:hover{
+	opacity: 1;
+}
+
+#upvoteBar{
+	background-image: none;
+	/*background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);*/
+  background-color: #89C624;
+}
+
+/* Tag-div */
+
+.tags-div{
+	display: inline-block
+}
+
+.tags-div *{
+	background-color: #2B2B2B;
+	float: left;
+}
+
+.tag-icon{
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #999
+}
+
+.recommend-tags{
+	color: #999;
+	font-size: 11px;
+}
+.tag-list{
+	color: #ddddd1;
+}
+
+/*.tag-icon, .tag-text,.tag-list, .recommend-tags{
+	float: left;
+}*/
+
+.tag-icon{
+	/*font-size: 1.5em;*/
+	padding-top: 11px;
+}
+
+.submit-comment{
+	width: 100%;
+	margin-top: 10px;
+	/*border-radius: 10px;*/
+	border: solid 0.5px #999;
+}
+
+.submit-comment:focus{
+	border: solid 1px;
+	background-color: #262E3B;
+  border-color: #C29F37;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+ 
+-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+/*
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 196, 98, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 196, 98, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(98, 196, 98, 0.6);*/
+}
+
+/* Comment view */
+/*==========================*/
+
+.comment-list{
+	list-style-type: none
+}
+
+.comment-list-item{
+	margin-left: 0px;
+}
+.comment-div{
+	display: inline-block;
+	padding: 0px 0px 0px 3px;
+	background-color: #2B2B2B;
+}
+
+.comment-div *{
+	float:left;
+	background-color: #2B2B2B;
+	/*width: 100%;*/
+}
+
+.comment-vote{
+	/*float: left;*/
+	display: inline-block;
+	/*padding: 0px 0px 0px 0px;*/
+	/*background-color: blue;*/
+	/*margin-right: 0px;*/
+	margin: 6px -12px 0px -17px;
+}
+
+.comment-vote *{
+	/*font-size: 1em;*/
+}
+
+.comment-body{
+	background: rgb(24,24,23);
+	/*width: 100%;*/
+}
+
+/* Application HBS styling. POSTS page. */
+/*==========================*/
+#topbar{
+	width: 100%;
+	background-color: #2b2b2b;
+	font-size: 15px;
+	height: 50px;
+	font-weight: 700;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0 0 11px 1px #111;
+	-webkit-box-shadow: 0 0 11px 1px #111;
+
+	margin: 0px 0px 7px 0px;
+	display: inline-block;
+}
+
+.topbar-elements{
+/*	width: 1000px;
+	margin: 0 auto;
+	position: relative;*/
+}
+
+.topbar-elements *{
+	/*border: solid 1px red;*/
+	height: 50px;
+	line-height: 50px;
+	background-color: #2b2b2b;
+	/*background-color: transparent;*/
+}
+
+.logo{
+	font-size: 1.6em;
+	/*margin-right: 10px;*/
+	color: white;
+	padding-right: 67px;
+}
+
+.logo:hover{
+	background-color: #444442;
+}
+
+.user-account{
+	float: right;
+}
+
+.main-navigation{
+	display: inline-block;
+	/*border: solid 1px red;*/
+	margin-left: 20px;
+}
+
+.main-navigation *{
+	float: left;
+	/*border: solid 1px green;*/
+	height: 100%;
+	font-size: 1.3em;
+	line-height: 50px;
+	margin: 0 1px;
+	padding: 0 10px;
+}
+
+.main-navigation *:hover{
+	background-color: #444442;
+}
+
+.user-account{
+	float: right;
+	/*border: solid 1px green;*/
+}
+
+.nav-justify-menu{
+	font-size: 1em;
+}
+
+.nav-upload-icon{
+	font-size: 1.5em;
+}
+
+.nav-random-icon{
+	font-size: 1em;
+}
+
+.nav-upload{
+	padding: 0 10px;
+}
+
+.nav-upload *{
+	font-size: 1em;
+	margin: 0 1px;
+	background-color: transparent;
+	padding: 0 3px;
+}
+
+.nav-upload:hover{
+	background-color: #1E6077;
+}
+
+.nav-upload *:hover{
+	background-color: #1E6077;
+}
+
+.posts-div{
+	background-color: #2B2B2B;
+	padding: 22px;
+	border-radius: 20px;
+}
+
+.posts-div *{
+	background-color: #2B2B2B;
+}
+.posts-heading-div{
+	/* padding: 10px 0px; */
+	/* border: solid 1px red; */
+	margin: 0px 0px 30px 0px;
+	color: white;
+}
+
+.posts-title{
+	font-size: 1.9em;
+}
+
+/* This media query needs a redo. */
+@media only screen and (max-device-width: 1065px) {
+    .nav-upload-text{display:none;}
+}
+.post-preview{
+	position: relative;
+	overflow: hidden;
+
+
+	display: inline-block;
+	padding: 1px;
+	margin-bottom: 0px;
+	line-height: 1.42857143;
+	/*background-color: #fff;*/
+	border: 3px solid #444442;
+	border-radius: 0px;
+
+	/*width: 100%;*/
+	/*width: 300px;*/
+	height: 200px;
+	/*height: auto;*/
+}
+
+.post-preview:hover{
+	border: 3px solid #C29F37;
+	transition: none;
+}
+
+.preview-img{
+	width: 100%;
+	min-height: 100%;
+	/*height: 300px;*/
+
+	outline: 1px solid #121211;
+	outline-offset: -1px;
+}
+
+.thumb{
+	padding: 2px 4px;
+	/*border: solid 1px red;*/
+}
+.buttons-row{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Buttons for navigation. */
+.prev-next{
+	/*border: solid 1px red;*/
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	border: 2px solid #404040;
+	float: left;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.browse{
+	float: right;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.button-div{
+	/*margin: 0px;*/
+	padding: 0px;
+}
+
+.button-div *{
+	/*background-color:red;*/
+	line-height: 42px;
+}
+
+.navigation-btn{
+	padding: 0px;
+	border-radius: 0px;
+	background-color: #181818;
+}
+
+.navigation-btn:hover{
+	color: white;
+}
+
+.next-button, .browse-button, .prev-button{
+	/*display: inline-block;*/
+	/*border-radius: ine;*/
+	/*background: #232323; */
+	background: -moz-linear-gradient(top,rgba(35,35,35,1) 0,rgba(18,18,17,1) 100%);
+	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(35,35,35,1)),color-stop(100%,rgba(18,18,17,1))); */
+	/* background: -webkit-linear-gradient(top,rgba(35,35,35,1) 0,rgba(18,18,17,1) 100%); */
+	background: -o-linear-gradient(top,rgba(35,35,35,1) 0,rgba(18,18,17,1) 100%);
+	background: -ms-linear-gradient(top,rgba(35,35,35,1) 0,rgba(18,18,17,1) 100%);
+	/* background: linear-gradient(to bottom,rgba(35,35,35,1) 0,rgba(18,18,17,1) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#232323', endColorstr='#121211', GradientType=0);
+}
+
+.previous-button{
+	width: 100%;
+	/*border-radius: 4px;*/
+
+}
+
+.next-button{
+	width: 100%;
+	/*border-radius: 4px;*/
+
+	background-color: #1C5163;
+	opacity: .8;
+	background: -moz-linear-gradient(top,#227794 0,rgba(28,81,99,1) 100%);
+	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#227794),color-stop(100%,rgba(28,81,99,1))); */
+	/* background: -webkit-linear-gradient(top,#227794 0,rgba(28,81,99,1) 100%); */
+	background: -o-linear-gradient(top,#227794 0,rgba(28,81,99,1) 100%);
+	background: -ms-linear-gradient(top,#227794 0,rgba(28,81,99,1) 100%);
+	/* background: linear-gradient(to bottom,#227794 0,rgba(28,81,99,1) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#227794', endColorstr='rgba(28,81,99,1)', GradientType=0);
+}
+
+.browse-button{
+	/*float: right;*/
+	line-height: 42px;
+	float:right;
+	width: 100%;
+	margin-left: 5px;
+	border: 2px solid #404040;
+	/*border-radius: 4px;*/
+	/*-moz-border-radius: 4px;*/
+	/*-webkit-border-radius: 4px;*/
+}
+
+
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
