@@ -2374,19 +2374,19 @@ input[type="button"].btn-block {
           transition: height .35s ease;
 }
 
-/*@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url(asset_path('glyphicons-halflings-regular.eot'));
-  src: url(asset_path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), 
-  url(asset_path('glyphicons-halflings-regular.woff')) format('woff'), url(asset_path('glyphicons-halflings-regular.ttf')) format('truetype'),
-  url(asset_path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
-}*/
 @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(asset_path('fonts/glyphicons-halflings-regular.eot'));
+  src: url(asset_path('fonts/glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), 
+  url(asset_path('fonts/glyphicons-halflings-regular.woff')) format('woff'), url(asset_path('glyphicons-halflings-regular.ttf')) format('truetype'),
+  url(asset_path('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
+}
+/*@font-face {
   font-family: 'Glyphicons Halflings';
 
   src: url('../assets/fonts/glyphicons-halflings-regular.eot');
   src: url('../assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
+}*/
 .glyphicon {
   position: relative;
   top: 1px;
