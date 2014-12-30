@@ -14,13 +14,13 @@
 <a href="http://slimgur.herokuapp.com/" target="_blank">Check it out!</a>
 
 <p>Currently disabled features:</p>
-	<ul>
-		<li>Posting system:</li>
-			<ul>
-				<li>Creating and updating posts/comments has been disabled in light of an issue on the server side. So as of the current state, Slimgur just looks pretty.
-				</li>
-			</ul>
-	</ul>
+<ul>
+	<li>Posting system:</li>
+		<ul>
+			<li>Creating and updating posts/comments has been disabled in light of an issue on the server side. So as of the current state, Slimgur just looks pretty.
+			</li>
+		</ul>
+</ul>
 
 <p>To add/fix:</p>
 <ul>
