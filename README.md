@@ -13,7 +13,7 @@
 
 <a href="http://slimgur.herokuapp.com/" target="_blank">Check it out!</a>
 
-Currently disabled features:
+<p>Currently disabled features:</p>
 	<ul>
 		<li>Posting system:</li>
 			<ul>
